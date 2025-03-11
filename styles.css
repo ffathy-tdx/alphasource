@@ -161,7 +161,7 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Packages Section */
+/* WHAT WE OFFER (Single Card Section) */
 .packages-section {
   padding: 2rem 1rem;
   background: #ffffff;
@@ -174,46 +174,44 @@ nav a:hover {
   margin-top: 2rem;
 }
 
-.package-card {
+/* Single-offer layout - center the card */
+.single-offer {
+  display: flex;
+  justify-content: center;
+}
+
+/* The single card with everything centered */
+.single-card {
+  max-width: 500px;
+  margin: 0 auto;
   background: #fafafa;
   border-radius: 4px;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   border-top: 4px solid #333;
 }
 
-.package-card h3 {
-  margin-bottom: 1rem;
+.single-card ul {
+  text-align: center;         /* Center bullet items */
+  list-style-position: inside; /* Keep the bullet next to text */
+  margin: 1rem 0;
 }
 
-.package-card ul {
-  list-style: none;
-  margin-bottom: 1rem;
-  text-align: left;
-  padding: 0 1rem;
-}
-
-.package-card ul li {
-  margin-bottom: 0.5rem;
-}
-
-.btn-package {
-  text-decoration: none;
+.single-card a.btn-package {
+  display: inline-block;
+  margin-top: 1rem;
   background: #333;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  text-decoration: none;
 }
 
-.btn-package:hover {
+.single-card a.btn-package:hover {
   background: #555;
 }
 
-.best-value {
-  border-top: 4px solid #008080; /* Distinguish the best-value card color */
-}
-
-/* How It Works Section */
+/* How It Works */
 .how-section {
   background: #ffffff;
   padding: 2rem 1rem;
