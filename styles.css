@@ -141,42 +141,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* PARTNERS SECTION */
-.partners-section {
-  background: #ffffff;
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-}
-
-.partners-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.partners-container p {
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-  color: #333;
-}
-
-.partners-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.partner {
-  background: #fafafa;
-  padding: 1rem;
-  border-radius: 4px;
-  min-width: 120px;
-  text-align: center;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Services Section */
 .services-section {
   background: #ffffff;
@@ -249,21 +213,19 @@ nav a:hover {
   border-top: 4px solid #008080; /* Distinguish the best-value card color */
 }
 
-/* HOW IT WORKS SECTION (UPDATED) */
+/* How It Works Section */
 .how-section {
   background: #ffffff;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
 }
 
-/* Container that centers the bullet list and button */
 .how-content {
-  max-width: 800px;  /* So it doesn’t stretch too wide */
-  margin: 0 auto;    /* Center horizontally */
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
-/* Bullet list left-aligned within the container */
 .how-steps {
   text-align: left;
   margin: 0 auto 2rem;
@@ -274,7 +236,6 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-/* Button alignment */
 .how-content .btn-hero {
   display: inline-block;
   margin-bottom: 1rem;
