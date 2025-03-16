@@ -25,19 +25,17 @@
 
     <!-- Custom inline styles -->
     <style>
-      /* Set overall background color */
+      /* Overall background and text colors */
       body {
         background-color: #1d1817;
-        color: #f5f5f5; /* Ensure good contrast on dark background */
+        color: #f5f5f5;
       }
-
-      /* Adjust logo size in header */
+      /* Header Logo */
       .header-nav .logo img {
         width: 100px;
         height: auto;
       }
-
-      /* DARKEN THE HERO SECTION WITH AN OVERLAY */
+      /* Hero Section with Dark Overlay */
       .hero-view {
         position: relative;
         background: url("images/header-bg.jpg.webp") center center/cover no-repeat;
@@ -47,26 +45,31 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.6); /* Adjust overlay opacity as needed */
+        background: rgba(0, 0, 0, 0.6);
         z-index: 1;
       }
       .hero-view .hero-text {
         position: relative;
-        z-index: 2; /* Above overlay */
+        z-index: 2;
       }
       .hero-view .hero-text h3,
       .hero-view .hero-text h1 {
         color: #fff;
       }
-
-      /* NAVIGATION LINKS - MAKE THEM WHITE */
+      /* Header Navigation Styles */
       .menu li a {
         color: #fff !important;
+        padding: 5px 10px;
       }
       .menu li a:hover {
         color: #ddd !important;
       }
-
+      /* Active navigation link: white text on white background with active color */
+      .menu li a.active {
+        color: #1d1817 !important;
+        background: #fff;
+        border-radius: 4px;
+      }
       /* Offer list styling */
       .offer-list {
         list-style: disc inside;
@@ -74,16 +77,14 @@
         padding-left: 20px;
         text-align: left;
       }
-
-      /* Additional spacing for sections */
+      /* Section spacing */
       .section {
         padding: 120px 0;
       }
-
-      /* "How It Works" items: dark background, white text */
+      /* How It Works Section */
       .how-item {
-        background: #2a2725; /* Darker background for each item */
-        color: #fff;        /* White text for contrast */
+        background: #2a2725;
+        color: #fff;
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -93,8 +94,7 @@
       .how-item h3 {
         margin-bottom: 10px;
       }
-
-      /* MAKE KEY SUBTITLES WHITE */
+      /* Key Subtitles (for sections and headings) */
       .section-title,
       .feature-inner h3,
       .how-item h3,
@@ -130,12 +130,13 @@
           </div>
           <div class="col col-lg-10 d-none d-lg-block ms-auto">
             <ul class="menu">
+              <!-- Re-ordered navigation to match page content -->
               <li><a href="#" class="link-to active" data-scroll="home">Home</a></li>
               <li><a href="#" class="link-to" data-scroll="services">Services</a></li>
+              <li><a href="#" class="link-to" data-scroll="how-it-works">How It Works</a></li>
               <li><a href="#" class="link-to" data-scroll="offer">What We Offer</a></li>
               <li><a href="#" class="link-to" data-scroll="about">About Us</a></li>
               <li><a href="#" class="link-to" data-scroll="contact">Contact Us</a></li>
-              <li><a href="#" class="link-to" data-scroll="how-it-works">How It Works</a></li>
             </ul>
           </div>
         </div>
@@ -154,12 +155,13 @@
         </div>
       </div>
       <ul>
+        <!-- Re-ordered mobile nav as well -->
         <li><a href="#" class="link-to activeMobile" data-scroll="home">Home</a></li>
         <li><a href="#" class="link-to" data-scroll="services">Services</a></li>
+        <li><a href="#" class="link-to" data-scroll="how-it-works">How It Works</a></li>
         <li><a href="#" class="link-to" data-scroll="offer">What We Offer</a></li>
         <li><a href="#" class="link-to" data-scroll="about">About Us</a></li>
         <li><a href="#" class="link-to" data-scroll="contact">Contact Us</a></li>
-        <li><a href="#" class="link-to" data-scroll="how-it-works">How It Works</a></li>
       </ul>
     </nav>
 
@@ -172,8 +174,7 @@
               <h3>Elevate Your Real Estate Game</h3>
               <h1>Transform Your Business</h1>
               <p>
-                At Alpha Source Services, we empower real estate investors, wholesalers, and property flippers with top-notch leads and market insights. Transform your business with our innovative solutions, expert teams, and data-driven strategies.
-              </p>
+                Alpha Source Services empowers real estate professionals with high-quality leads, market insights, and tailored team solutions to accelerate growth.              </p>
               <button class="btn btn-primary wow fadeInUp">Schedule a Free Call</button>
             </div>
           </div>
@@ -260,7 +261,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 wow fadeInLeftBig">
             <div class="row">
-              <!-- Offer Images (replace with your client’s images if needed) -->
+              <!-- Offer Images -->
               <div class="col-12 col-sm-4">
                 <div class="offer-img">
                   <img src="images/offer_01.png.webp" class="img-fluid" alt="Offer 1" />
@@ -341,7 +342,7 @@
     <section class="section block" id="contact">
       <div class="container">
         <div class="row">
-          <!-- Left Column: Send Us a Message Form -->
+          <!-- Left Column: Message Form -->
           <div class="col-lg-6 wow fadeInLeftBig">
             <div class="contact-form-container">
               <h2 class="section-title">Send Us a Message</h2>
@@ -362,7 +363,7 @@
               </p>
             </div>
           </div>
-          <!-- Right Column: Calendly Inline Widget -->
+          <!-- Right Column: Calendly Widget -->
           <div class="col-lg-6 wow fadeInRightBig">
             <div class="calendly-container">
               <h2 class="section-title">Schedule a Meeting</h2>
@@ -376,52 +377,30 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer with Two Columns -->
     <footer class="area-footer section">
-      <div class="container wow fadeInUp">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <h3 class="text-white">About Us</h3>
-            <p>
-              Alpha Source Services empowers real estate professionals with high-quality leads, market insights, and tailored team solutions to accelerate growth.
-            </p>
+        <div class="container wow fadeInUp">
+          <div class="row">
+            <!-- Contact Us Column -->
+            <div class="col-12 text-center">
+              <h3 class="text-white">Contact Us</h3>
+              <p class="mb-4">
+                For prompt assistance and personalized support, reach out to us today.
+              </p>
+              <span class="num d-block">(725) 241-7263</span>
+              <span class="num d-block">admin@alphasource.services</span>
+            </div>
           </div>
-          <div class="col-lg-4 mt-4 mt-md-0 col-md-6">
-            <h3 class="text-white">Contact Us</h3>
-            <p class="mb-4">
-              For prompt assistance and personalized support, reach out to us today.
-            </p>
-            <span class="num d-block">(725) 241-7263</span>
-            <span class="num d-block">admin@alphasource.services</span>
-          </div>
-          <div class="col-lg-5 mt-4 mt-md-0 col-md-6">
-            <h3 class="text-white">Newsletter</h3>
-            <p class="mb-4">Subscribe for updates and exclusive offers. We respect your privacy.</p>
-            <form action="#">
-              <input type="text" placeholder="Email address" />
-              <button class="genric-btn">
-                <span class="lnr lnr-arrow-right"></span>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="row mt-5 justify-content-between">
-          <div class="col-lg-6 mb-4 mb-lg-0 mt-4">
-            <p class="copy-right">
-              &copy; 2025 Alpha Source Services. All rights reserved.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="social-icons d-flex justify-content-lg-end">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-              <a href="#"><i class="fa-brands fa-behance"></i></a>
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <p class="copy-right">
+                &copy; 2025 Alpha Source Services. All rights reserved.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+      
 
     <!-- Library Scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
