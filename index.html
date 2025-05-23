@@ -357,7 +357,7 @@
       </div>
     </section>
 
-    <!-- Contact Section: Message Form Only -->
+    <!-- Contact Section: Message Form & Calendly Widget with Formspree integration -->
     <section class="section block" id="contact">
       <div class="container">
         <div class="row">
@@ -365,6 +365,7 @@
           <div class="col-lg-6 wow fadeInLeftBig">
             <div class="contact-form-container">
               <h2 class="section-title">Send Us a Message</h2>
+              <!-- Using Formspree endpoint -->
               <form class="contact-form"
                     action="https://formspree.io/f/mzzezenk"
                     method="POST">
@@ -418,11 +419,17 @@
                   placeholder="Tell us more about your business."
                 ></textarea>
 
+                <!-- Optionally, set a subject line or redirect in hidden fields -->
                 <input
                   type="hidden"
                   name="_subject"
                   value="New Contact Form Submission!"
                 />
+                <!-- <input
+                  type="hidden"
+                  name="_next"
+                  value="https://your-redirect-page.html"
+                /> -->
 
                 <button type="submit" class="btn btn-submit">Send Message</button>
               </form>
@@ -432,38 +439,60 @@
               </p>
             </div>
           </div>
+          <!-- Right Column: Calendly Widget -->
+          <div class="col-lg-6 wow fadeInRightBig">
+            <div class="calendly-container">
+              <h2 class="section-title">Schedule a Meeting</h2>
+              <!-- Calendly inline widget begin -->
+              <div
+                class="calendly-inline-widget"
+                data-url="https://cal.com/peter-said/30min
+                style="min-width:320px;height:700px;"
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
+              <!-- Calendly inline widget end -->
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="area-footer section">
-      <div class="container wow fadeInUp">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <h3 class="text-white">Contact Us</h3>
-            <p class="mb-4">
-              For prompt assistance and personalized support, reach out to us today.
-            </p>
-            <span class="num d-block">(725) 241-7263</span>
-            <span class="num d-block">admin@alphasource.services</span>
-          </div>
-          <div class="col-lg-6 col-md-6 text-right">
-            <div class="footer-icons" style="margin-bottom: 20px;">
-              <a href="https://www.linkedin.com/in/alphasource-services-458191357/" target="_blank" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://www.facebook.com/AlphaSourceServices/" target="_blank" aria-label="Facebook">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </div>
-            <p class="copy-right">
-              &copy; 2025 Alpha Source Services. All rights reserved.
-            </p>
-          </div>
-        </div>
+<footer class="area-footer section">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <!-- Contact Us Column -->
+      <div class="col-lg-6 col-md-6">
+        <h3 class="text-white">Contact Us</h3>
+        <p class="mb-4">
+          For prompt assistance and personalized support, reach out to us today.
+        </p>
+        <span class="num d-block">(725) 241-7263</span>
+        <span class="num d-block">admin@alphasource.services</span>
       </div>
-    </footer>
+      <!-- Right Column: Social Icons and Copyright -->
+      <div class="col-lg-6 col-md-6 text-right">
+        <div class="footer-icons" style="margin-bottom: 20px;">
+          <a href="https://www.linkedin.com/in/alphasource-services-458191357/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/AlphaSourceServices/" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <p class="copy-right">
+          &copy; 2025 Alpha Source Services. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
+
+    
     <!-- Library Scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
